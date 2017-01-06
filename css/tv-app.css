@@ -1,0 +1,417 @@
+/* Todo oculto */
+#emision, #emision-ganador, #dinamica-atento, #dinamica-trivia-online{display:none;}
+
+/* Design */
+body {
+    background: #dddddd;
+}
+
+body.estilo-la-maana-de-chilevisin{
+	background: #ff8a00;
+	font-family: 'Source Sans Pro';
+}
+body.estilo-via-2016{
+	background: #cccccc;
+	font-family: 'Source Sans Pro';
+}
+body.estilo-sabingo{
+	background: #dddddd;
+}
+/* Atencion */
+body.estilo-la-maana-de-chilevisin h2.atencion{
+    font-family: 'Source Sans Pro';
+    color: #5b0187;
+    font-size: 6em;
+    width: 70%;
+    margin: 1em auto;
+    text-align: center;
+    padding: 0;
+	padding-top: 0.5em;
+}
+body.estilo-via-2016 h2.atencion{
+    font-family: 'Source Sans Pro';
+    color: #cc9933;
+    font-size: 6em;
+    width: 70%;
+    margin: 1em auto;
+    text-align: center;
+    padding: 0;
+	padding-top: 0.5em;
+}
+/* Pregunta*/
+body.estilo-la-maana-de-chilevisin h2.pregunta{
+	font-family: 'Source Sans Pro';
+	color: #5b0187;
+	font-size: 4em;
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	text-align: center;
+	padding: 0;
+}
+body.estilo-via-2016 h2.pregunta{
+	font-family: 'Source Sans Pro';
+	color: #cc9933;
+	font-size: 4em;
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	text-align: center;
+	padding: 0;
+}
+/* Respuestas */
+body.estilo-la-maana-de-chilevisin #respuestas img{
+	display: none;
+}
+body.estilo-la-maana-de-chilevisin .respuesta{
+	font-family: 'Source Sans Pro';
+	background-color: #ffffff;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	border-radius: 0.5em;
+	width: 60%;
+	margin: 0.5em auto;
+	position: relative;
+}
+body.estilo-via-2016 #respuestas img{
+	display: none;
+}
+body.estilo-via-2016 .respuesta{
+	font-family: 'Source Sans Pro';
+	background-color: #ffffff;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	border-radius: 0.5em;
+	width: 60%;
+	margin: 0.5em auto;
+	position: relative;
+}
+    /* Posicion de las respuestas, si tenemos 1, 2, 3, 4, 5, 6, 7 u 8 respuestas */
+	body.estilo-la-maana-de-chilevisin .respuesta-n1,
+	body.estilo-via-2016 .respuesta-n1,
+	body.estilo-la-maana-de-chilevisin .respuesta-n2,
+	body.estilo-via-2016 .respuesta-n2,
+	body.estilo-la-maana-de-chilevisin .respuesta-n3,
+	body.estilo-via-2016 .respuesta-n3{
+		margin: 2.5em auto;			
+	}
+	body.estilo-la-maana-de-chilevisin .respuesta-n4,
+	body.estilo-via-2016 .respuesta-n4{
+		margin: 2em auto;		
+	}
+	body.estilo-la-maana-de-chilevisin .respuesta-n5,
+	body.estilo-via-2016 .respuesta-n5{
+		margin: 1.5em auto;
+	}
+	body.estilo-la-maana-de-chilevisin .respuesta-n6,
+	body.estilo-via-2016 .respuesta-n6{
+		margin: 1em auto;
+	}
+	body.estilo-la-maana-de-chilevisin .respuesta-n9,
+	body.estilo-via-2016 .respuesta-n9,
+	body.estilo-la-maana-de-chilevisin .respuesta-n10,
+	body.estilo-via-2016 .respuesta-n10,
+	body.estilo-la-maana-de-chilevisin .respuesta-n11,
+	body.estilo-via-2016 .respuesta-n11,
+	body.estilo-la-maana-de-chilevisin .respuesta-n12,
+	body.estilo-via-2016 .respuesta-n12,
+	body.estilo-la-maana-de-chilevisin .respuesta-n13,
+	body.estilo-via-2016 .respuesta-n13,
+	body.estilo-la-maana-de-chilevisin .respuesta-n14,
+	body.estilo-via-2016 .respuesta-n14,
+	body.estilo-la-maana-de-chilevisin .respuesta-n15,
+	body.estilo-via-2016 .respuesta-n15,
+	body.estilo-la-maana-de-chilevisin .respuesta-n16,
+	body.estilo-via-2016 .respuesta-n16{
+		float: left;
+		margin-right: 1.5em;
+		margin-left: 1.5em;
+	}
+	
+	body.estilo-la-maana-de-chilevisin .r-correcta{
+		background-color: #5b0187;
+	}
+	body.estilo-via-2016 .r-correcta{
+		background-color: #cc9933;
+	}
+	body.estilo-la-maana-de-chilevisin .respuesta .letra{		
+		background-color: #3db5e7;
+	    color: #ffffff;
+	    font-family: 'Source Sans Pro';
+	    text-transform: uppercase;
+	    float: left;
+	    -webkit-border-radius: 2em;
+	    -moz-border-radius: 2em;
+	    border-radius: 2em;
+	    position: absolute;
+	    font-size: 3.5em;
+	    padding: 0.2em 0.5em;
+	    top: 25%;
+	    left: -6%;
+	}
+	body.estilo-via-2016 .respuesta .letra{		
+		background-color: #d7dcd6;
+		color: #ca1dcf;
+	    font-family: 'Source Sans Pro';
+	    text-transform: uppercase;
+	    float: left;
+	    -webkit-border-radius: 2em;
+	    -moz-border-radius: 2em;
+	    border-radius: 2em;
+	    position: absolute;
+	    font-size: 3.5em;
+	    padding: 0.2em 0.5em;
+	    top: 25%;
+	    left: -6%;
+	}
+	body.estilo-la-maana-de-chilevisin .respuesta .txt{
+	    font-family: 'Source Sans Pro';
+	    float: left;
+	    color: #5b0187;
+	    font-size: 3.5em;
+	    padding: 1em 0.2em;
+	    margin-left: 1em;
+	    text-align: center;
+	    width: 65%;
+	}
+	body.estilo-via-2016 .respuesta .txt{
+	    font-family: 'Source Sans Pro';
+	    float: left;
+	    color: #cc9933;
+	    font-size: 3.5em;
+	    padding: 1em 0.2em;
+	    margin-left: 1em;
+	    text-align: center;
+	    width: 67%;
+	}
+	body.estilo-la-maana-de-chilevisin .r-correcta .txt{
+		color: #ffffff;
+	}
+	body.estilo-via-2016 .r-correcta .txt{
+		color: #ffffff;
+	}
+	body.estilo-la-maana-de-chilevisin .respuesta .ico-correcta{
+		display: none;
+		float: right;
+		background: url('/images/tv-correcto.png');
+		/* No lo mostramos */
+		width: 0px;
+		height: 0px;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: 5em 0em;
+	}
+	body.estilo-via-2016 .respuesta .ico-correcta{
+		display: none;
+		float: right;
+		background: url('/images/tv-correctowhite.png');
+		/* No lo mostramos */
+		width: 0px;
+		height: 0px;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: 5em 0.5em 5em 0em;
+	}
+	body.estilo-la-maana-de-chilevisin .respuesta .porcentaje{
+		font-family: 'Source Sans Pro';
+		text-transform: uppercase;
+		color: #3db5e7;
+		float: right;
+		font-size: 3.5em;
+		padding: 1em 0.3em 1em 0em;
+	}
+	body.estilo-via-2016 .respuesta .porcentaje{
+		font-family: 'Source Sans Pro';
+		text-transform: uppercase;
+		color: #ca1dcf;
+		float: right;
+		font-size: 3.5em;
+		padding: 1em 0.3em 1em 0em;
+	}
+	body.estilo-la-maana-de-chilevisin .r-correcta .porcentaje{
+		color: #47d751;
+	}
+	body.estilo-via-2016 .r-correcta .porcentaje{
+		color: #ffffff;
+	}
+body.estilo-sabingo .respuesta{
+	border: 3px solid #ccc;
+}
+
+/* Ganador */
+body.estilo-la-maana-de-chilevisin #emision-ganador,
+body.estilo-via-2016 #emision-ganador{
+	padding-top: 1.5em;
+}
+body.estilo-la-maana-de-chilevisin h2.ganador{
+	font-family: 'Source Sans Pro';
+	color: #5b0187;
+	font-size: 3em;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0;
+}
+body.estilo-via-2016 h2.ganador{
+	font-family: 'Source Sans Pro';
+	color: #cc9933;
+	font-size: 3em;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0;
+}
+body.estilo-la-maana-de-chilevisin .m-ganador,
+body.estilo-via-2016 .m-ganador{
+    width: 600px;
+    height: 505px;
+    background: url('/images/tv-ganador.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0 auto;
+    z-index: 10;
+}
+body.estilo-la-maana-de-chilevisin #emision-ganador .body,
+body.estilo-via-2016 #emision-ganador .body{
+	position: relative;
+}
+body.estilo-la-maana-de-chilevisin #scratchcard,
+body.estilo-via-2016 #scratchcard{
+	display: block;
+	z-index: 1;
+	width: 266px;
+	height: 300px;
+	position: absolute;
+	top: 150px;
+	left: -133px;
+	margin: 0 50%;
+}
+body.estilo-la-maana-de-chilevisin #scratchcard img,
+body.estilo-via-2016 #scratchcard img{
+    z-index: 1;
+    width: 266px;
+    height: 266px;
+    display: block;
+    -webkit-border-radius: 115px;
+    -moz-border-radius: 115px;
+    border-radius: 115px;
+}
+body.estilo-la-maana-de-chilevisin #emision-ganador h2.nombre{
+	font-family: 'Source Sans Pro';
+	font-size: 2.5em;
+    padding: 0.3em;
+	background-color: #5b0187;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	border-radius: 0.5em;
+	margin: 0 auto;
+	color: #ffffff;
+	text-align: center;
+	width: 40%;
+}
+body.estilo-via-2016 #emision-ganador h2.nombre{
+	font-family: 'Source Sans Pro';
+	font-size: 2.5em;
+    padding: 0.3em;
+	background-color: #cc9933;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	border-radius: 0.5em;
+	margin: 0 auto;
+	color: #ffffff;
+	text-align: center;
+	width: 40%;
+}
+/* Logo */
+body.estilo-la-maana-de-chilevisin #logo{
+	background: url('/images/tv-logo-lamanana.png');
+	background-size: 100%;
+	width: 270px;
+	height: 85px;
+	margin: 2em auto;
+}
+
+body.estilo-via-2016 #logo{
+    background: url('/images/tv-logo-vina.png'); 
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 270px;
+	height: 90px;
+	margin: 2em auto;
+	margin-bottom: 1.5em;
+}
+
+
+.mensaje-finalizado {
+    background: #FF1919;
+    padding: 8px;
+    color: #fff;
+    font-size: 13px;
+}
+
+/* Status de las dinamicas */
+body.estilo-la-maana-de-chilevisin #dinamica-trivia-online h6.status{
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro';
+    background-color: transparent;
+	color: #5b0187;
+    font-size: 1.5em;
+    width: 150px;
+    margin: 1em auto;
+    padding: 5px;
+    text-align: center;
+    height: 1.1em;
+    padding-top: 0em;
+    border-radius: 1.5em;
+    width: 9em;
+}
+body.estilo-via-2016 #dinamica-trivia-online h6.status{
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro';
+    background-color: transparent;
+	color: #ffffff;
+    font-size: 1.5em;
+    width: 150px;
+    margin: 1em auto;
+    padding: 5px;
+    text-align: center;
+    height: 1.1em;
+    padding-top: 0em;
+    border-radius: 1.5em;
+    width: 9em;
+}
+body.estilo-la-maana-de-chilevisin #dinamica-trivia-online h6.cerrada{
+	background-color: #ffd700;
+}
+body.estilo-via-2016 #dinamica-trivia-online h6.cerrada{
+	background-color: #cc9933;
+}
+body.estilo-la-maana-de-chilevisin #dinamica-trivia-online h6.finalizada{
+	background-color: #ffd700;
+}
+body.estilo-via-2016 #dinamica-trivia-online h6.finalizada{
+	background-color: #cc9933;
+}
+
+#respuestas{width: 100%;}
+
+.clr{
+	clear: both;
+}
+
+
+.centrado{
+	text-align: center;
+	font-size: 3rem;
+}
+
+.logo-tv{
+	max-height: 80px;
+	margin-top: 20px;
+}
+
+.conte{
+	text-align: center;
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>App Init</title>
+		
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:700">
+	<link rel="stylesheet" href="css/tv-app.css">
+    <link rel="stylesheet" href="css/color.css">
+</head>
+<body class="estilo-programa-sqp tv-fondo">
+	<!-- Container (Emision) -->
+	<div class="conte">
+ <img class="logo-tv" src="images/logosqp.png" alt="">
+ </div>
+	<div id="emision">
+		<!-- Modales -->
+		<!-- Pantalla Emision Ganador -->
+		<div id="emision-ganador">
+			<div class="body">
+				<h2 class="ganador">¡Ganador!</h2>
+				<div class="m-ganador"></div>
+				<div id="scratchcard" class="multimedia"></div>
+				<h2 class="nombre"></h2>
+			</div>
+		</div>
+		<!-- Modal Atento -->
+		<div id="dinamica-atento">
+			<h2 class="atencion"></h2>
+		</div>
+		<!-- Modal Trivia Online -->
+		<div id="dinamica-trivia-online">		
+			<div class="body">
+				<h6 class="status"></h6>
+				<h2 class="pregunta"></h2>
+				<div id="respuestas"></div>
+			</div>
+		</div>		
+	</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="http://cdn.pubnub.com/pubnub-3.7.1.min.js"></script>
+	<script src="js/config.js"></script>
+	<script src="js/tv-app.js"></script>	
+  </body>
+</html>

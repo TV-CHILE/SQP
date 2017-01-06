@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Bug iOS9
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	 -->
+	<meta name="viewport" content="initial-scale=1.0001, minimum-scale=1.0001, maximum-scale=1.0001, user-scalable=no"/>
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>App Init</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" media="all">
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet"  type="text/css" href="css/color.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Google Analytics> -->
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-36532539-11', 'auto');
+	ga('send', 'pageview');
+	</script>
+</head>
+<body class="estilo-programa-sqp">
+	<header id="navbar" role="banner" class="navbar container navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="logo navbar-btn pull-left" href="/" title="Inicio">
+					<img src="images/logochv.png" alt="Inicio">
+				</a>
+				<div class="navbar-collapse pull-right">
+					<nav role="navigation">
+						<ul class="menu nav navbar-nav">
+							<li class="first last leaf login"><button class="btn-login action-in" type="button" data-toggle="modal" data-target="#login">LOGIN <span class="glyphicon glyphicon-user"></span></button></li>
+							<li class="first last leaf logout"><button class="btn-login action-out" type="button" data-toggle="modal" data-target="#salir">LOGIN <span class="glyphicon glyphicon-user"></span></button></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+		<!-- Modal login -->
+		<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false" style="display: none;">
+		  <div class="modal-dialog login-modal">
+		    <div class="modal-content">
+				<div class="modal-header-login">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+				</div>
+		      <div class="modal-body login-body">
+		        <button type="button" class="btn btn-lg facebookbtn"><img src="images/facebookico.png" />Facebook</button>
+		        <div class="clearfix"></div>
+		        <button type="button" class="btn btn-lg twitterbtn"><img src="images/twitterico.png" />Twitter</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- Modal logout-->
+		<div class="modal fade in" id="salir" tabindex="-1" role="dialog" aria-hidden="false" data-backdrop="static" data-keyboard="false" style="display: none;">
+		  <div class="modal-dialog login-modal">
+		    <div class="modal-content">
+				<div class="modal-header-login">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+				</div>
+		      <div class="modal-body salir-body">
+		        <button type="button" class="btn btn-lg btn-default salirbtn">Cerrar sesión</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	<!-- Container (Loading) -->
+	<div id="loading" class="main-container container">
+		<header role="banner" id="page-header"></header>
+		<div class="row">
+			<!--
+			<section class="col-sm-12">
+				<h1 class="page-header">Cargando...</h1>
+				<div class="region region-content">
+					<section id="block-system-main" class="clearfix">
+						<img src="wheel.gif" class="img-responsive center-block" alt="Cargando...">
+					</section>
+				</div>
+			</section>
+			-->
+		</div>
+	</div>
+	<!-- Container (Programas) -->
+	<div id="programas" class="main-container container">
+		<header role="banner" id="page-header"></header>
+		<div class="row">
+			<section class="col-sm-12" id="section-titulo">
+				<h2 class="page-header">Bienvenido a <strong>chilevision.tv</strong></h2>
+				<h4>Entra para participar</h4>
+				<div class="region region-content">
+					<section id="block-system-main" class="clearfix">
+						<div class="view-programas">
+						<!-- Listado de programas -->
+						</div>
+					</section>
+				</div>
+			</section>
+		</div>
+	</div>
+	<!-- Container (NoProgramas) -->
+	<div id="no-programas" class="main-container container">
+		<header role="banner" id="page-header"></header>
+		<div class="row">
+			<section class="col-sm-12">
+				<h2 class="page-header">BIENVENIDO A <strong>chilevision.tv</strong></h2>
+				<h4>En este momento no hay programas al aire con interacciones.</h4>
+			</section>
+			<section class="col-sm-12">
+				<h3>Puedes visitar nuestro sitio <strong>
+				<br>
+					<a class="bases bases1" href="http://www.chilevision.cl/">www.chilevision.cl</a></strong>
+				</h3>
+			</section>
+			<section class="col-sm-12">
+				<h3>Conoce nuestra AApp <strong>miCHV</strong></h3>
+				<div class="btn-app"><a href="https://play.google.com/store/apps/details?id=net.altavoz.droid.janusplayer.chv"><img src="images/android.png"></a></div>
+				<div class="btn-app"><a href="https://itunes.apple.com/cl/app/michv/id722492845"><img src="images/appstore.png"></a></div>
+				<div class="btn-app"><a href="https://www.windowsphone.com/en-us/store/app/michv/3c9a5ad2-ad21-4cfd-b561-56ef1fdfff47"><img src="images/wphone.png"></a></div>
+			</section>
+		</div>
+	</div>
+	<!-- Container (Emision) -->
+	<div id="emision" class="main-container container">
+		<header role="banner" id="page-header"></header>
+		<div class="row">			
+			<section class="header-espera">						
+				 <div class="img"></div> 
+			</section>
+			<section class="col-sm-12">
+			  <a id="main-content"></a>
+				<!--h1 class="page-header">Nombre del programa</h1-->
+				<div class="region region-content">
+					<section id="block-system-main" class="block block-system clearfix">
+						<!-- Modales -->
+						<!-- Modal inicio de emision -->
+						<div class="modal fade" id="emision-inicio" tabindex="-1" role="dialog" aria-labelledby="emisionInicioLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+								 	<button class="login-btn-modal pull-right login-btn-inmodal" data-target="#login">LOGIN <span class="glyphicon glyphicon-user"></span></button>
+									</div>
+									<div class="modal-body">
+		 								<div class="logo"><div class="image"></div></div>
+										<h3>Comienza la emisión. Atento a las dinámicas.</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Modal fin de emision -->
+						<div class="modal fade" id="emision-fin" tabindex="-1" role="dialog" aria-labelledby="emisionFinLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button class="login-btn-modal pull-right login-btn-inmodal" data-target="#login">LOGIN <span class="glyphicon glyphicon-user"></span></button>
+									</div>
+									<div class="modal-body">
+										<div class="logo"><div class="image"></div></div>
+										<h3>Terminó la emisión. Muchas gracias por tu participación.</h3>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Modal Emision Ganador -->
+						<div class="modal fade" id="emision-ganador" tabindex="-1" role="dialog" aria-labelledby="dinamicaEmisionGanadorLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button class="login-btn-modal pull-right login-btn-inmodal" data-target="#login">LOGIN <span class="glyphicon glyphicon-user"></span></button>
+									</div>
+									<div class="modal-body">
+										<div class="logo"><div class="image"></div></div>
+										<h3>¡Ganador!</h3>
+										<div class="wrapper-ganador">
+											<div class="m-ganador"></div>
+											<div id="scratchcard" class="multimedia"></div>
+											<h2 class="nombre"></h2>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Modal Atento -->
+						<div class="modal fade" id="dinamica-atento" tabindex="-1" role="dialog" aria-labelledby="dinamicaAtentoLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button class="login-btn-modal pull-right login-btn-inmodal" data-target="#login">LOGIN <span class="glyphicon glyphicon-user"></span></button>
+									</div>
+									<div class="modal-body">
+										<div class="logo"><div class="image"></div></div>
+										<h2 class="atencion">¡Atención!</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Modal Trivia Online -->
+						<div class="modal fade" id="dinamica-trivia-online" tabindex="-1" role="dialog" aria-labelledby="dinamicaTriviaOnlineLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button class="login-btn-modal pull-right login-btn-inmodal" data-target="#login">LOGIN <span class="glyphicon glyphicon-user"></span></button>
+									</div>
+									<div class="modal-body">
+										<div class="logo"><div class="image"></div></div>
+										<h2 class="pregunta"></h2>
+										<h6 class="status"></h6>
+										<div class="btn-group-vertical btn-group-lg" role="group" aria-label="respuestasLabel" id="respuestas">
+										</div>
+									</div>
+									<div class="modal-footer">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Modal Multimedia Online -->
+						<div class="modal fade" id="dinamica-multimedia-online" tabindex="-1" role="dialog" aria-labelledby="dinamicaMultimediaOnlineLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button class="login-btn-modal pull-right login-btn-inmodal" data-target="#login">LOGIN <span class="glyphicon glyphicon-user"></span></button>
+									</div>
+									<div class="modal-body">
+										<div class="logo"><div class="image"></div></div>
+										<h2 class="pregunta"></h2>
+										<div class="multimedia">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- No ha comenzado la emision -->
+						<div id="sin-comenzar" class="view-empty">
+							<h2 class="page-header">Espera el comienzo de la próxima emisión.</h2>
+						</div>
+					</section>
+				</div>
+			</section>
+		</div>
+	</div>
+	<footer class="footer container">
+		<div class="region region-footer">
+			<p><a class="bases" href="http://www.chilevision.cl/concursos/bases-plataforma-interactiva-chilevision-tv/2015-10-15/173503.html" target="_blank">BASES</a></p>
+		</div>
+	</footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="http://cdn.pubnub.com/pubnub-3.7.1.min.js"></script>
+	<script src="js/ion.sound.min.js"></script>
+	<script src="js/config.js"></script>
+	<script src="js/app.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+  </body>
+</html>

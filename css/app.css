@@ -1,0 +1,901 @@
+/* Todo oculto */
+#programas, #no-programas, #emision{display:none;}
+
+/* Tipografias */
+body.estilo-la-maana-de-chilevisin{
+	font-family: 'Source Sans Pro';
+	color: #5b0187;
+}
+body.estilo-via-2016{
+	font-family: 'Source Sans Pro';
+	color: #8c2b55;
+}
+/* Design */
+body {
+background: url('../images/background_chv.png') no-repeat;
+}
+
+a {color:#e94f3f; font-size:1.2em; text-decoration:none;}
+a:hover {color:#5fd9a5; text-decoration:underline;}
+
+h1 { font-size:2em; font-weight:700;}
+h2 { font-size:1.5em; font-weight:400;}
+h3 { font-size:1.2em; font-weight:400;}
+h4 {color: #0F152A; font-size:1em; font-weight:400;}
+
+.btn-default {background-color:#18192a; color:#fff; border: none;}
+
+.btn-default.disabled, .btn-default[disabled], fieldset[disabled] .btn-default, .btn-default.disabled:hover, 
+.btn-default[disabled]:hover, fieldset[disabled] .btn-default:hover, .btn-default.disabled:focus, 
+.btn-default[disabled]:focus, fieldset[disabled] .btn-default:focus, .btn-default.disabled:active, 
+.btn-default[disabled]:active, fieldset[disabled] .btn-default:active, .btn-default.disabled.active, 
+.btn-default[disabled].active, fieldset[disabled] .btn-default.active
+{color:#3c455f;}
+
+.btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, 
+.btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, 
+.btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, 
+.btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, 
+.btn-primary.disabled.active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary.active
+{background-color:#07b1e9; color:#fff;border-color: #07b1e9;}
+
+.btn-success.disabled, .btn-success[disabled], fieldset[disabled] .btn-success, 
+.btn-success.disabled:hover, .btn-success[disabled]:hover, fieldset[disabled] .btn-success:hover, 
+.btn-success.disabled:focus, .btn-success[disabled]:focus, fieldset[disabled] .btn-success:focus, 
+.btn-success.disabled:active, .btn-success[disabled]:active, fieldset[disabled] .btn-success:active, 
+.btn-success.disabled.active, .btn-success[disabled].active, fieldset[disabled] .btn-success.active
+{background-color:#12a880; color:#fff;border-color: #12a880;}
+
+.btn-danger.disabled, .btn-danger[disabled], fieldset[disabled] .btn-danger, .btn-danger.disabled:hover, 
+.btn-danger[disabled]:hover, fieldset[disabled] .btn-danger:hover, .btn-danger.disabled:focus, 
+.btn-danger[disabled]:focus, fieldset[disabled] .btn-danger:focus, .btn-danger.disabled:active, 
+.btn-danger[disabled]:active, fieldset[disabled] .btn-danger:active, .btn-danger.disabled.active, 
+.btn-danger[disabled].active, fieldset[disabled] .btn-danger.active
+{background-color:#cb0303; color:#fff;border-color: #cb0303;}
+
+#navbar .container{
+	padding-right: 0px;
+}
+
+.modal-content {
+	border-radius: 0;
+	background: #fff;
+}
+body.estilo-la-maana-de-chilevisin .modal-content{
+	background-color: #ff8a00;
+}
+body.estilo-via-2016 .modal-content{
+	background-color: #cccccc;
+}
+
+.modal-content h2 {color:#0f152a; font-weight:700;}
+.modal-content h3 {color:#0f152a; font-weight:700;}
+body.estilo-la-maana-de-chilevisin .modal-content h2,
+body.estilo-la-maana-de-chilevisin .modal-content h3{
+	font-family: 'Source Sans Pro';
+	color: #5b0187;
+	text-align: center;
+	margin-bottom: 1em;
+}
+body.estilo-via-2016 .modal-content h2,
+body.estilo-via-2016 .modal-content h3{
+	font-family: 'Source Sans Pro';
+	color: #8c2b55;
+	text-align: center;
+	margin-bottom: 1em;
+}
+.navbar-default {
+    border: none;
+    border-radius: 0;
+    background: #ff002b;
+	width: 100%;
+}
+
+.navbar-btn {margin:4px 0;}
+.navbar-default .navbar-nav > li > a {
+	    line-height: 54px;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+	font-size: 0.8em;
+}
+.navbar-default .navbar-nav>li>a:hover {color:#e94f3f;}
+.navbar-default img {
+	width: 65%;
+	max-width: 65px;
+	margin-top: 7px;
+}
+
+
+@media (max-width: 2048px) {
+	
+}
+
+@media (max-width: 1920px) {
+	
+}
+
+@media (max-width: 1334px) {
+	
+}
+
+@media (max-width: 1136px) {
+	
+}
+
+@media (max-width: 1080px) {
+	body {font-size:16px; }
+}
+
+@media (max-width: 960px) {
+	
+}
+
+@media (max-width: 768px) {
+	.navbar-header {
+    	float: none;
+    	width: 100%;
+	}
+	.container > .navbar-header, .container > .navbar-collapse {
+    	margin-right: 0px;
+    	margin-left: 0px !important;
+	}
+	
+}
+
+@media (max-width: 750px) {
+	
+}
+
+@media (max-width: 640px) {
+	body { font-size:16px; }
+	
+}
+
+
+.navbar.container {
+    margin-top: 0 !important;
+	max-width:100% !important;
+}
+
+ @media screen and (min-width:1200px){
+	.navbar.container{
+		max-width:100% !important;
+	}
+
+}
+
+.navbar-default {
+    border: none;
+    border-radius: 0;
+    background: #211915;
+    width: 100%;
+}
+
+
+.navbar-header {
+    float: none;
+    width: 100%;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: none;
+    border: none;
+    background: #313131;
+}
+
+
+.navbar-nav {
+    margin: 1px 0;
+}
+header {
+    padding-right: 0 !important;
+}
+
+#section-titulo {
+    padding-top: 30px;
+	min-height:600px;
+}
+#section-titulo h1 {color:#fff; font-size:2em; font-weight:700;}
+#section-titulo h2 {color:#fff; font-size:1.5em; font-weight:400;margin-bottom:0px;margin-top:0px}
+#section-titulo h4 {color:#fff; font-size:1em; font-weight:400; margin-top:0px}
+body.estilo-la-maana-de-chilevisin #section-titulo h1,
+body.estilo-la-maana-de-chilevisin #section-titulo h2,
+body.estilo-la-maana-de-chilevisin #section-titulo h4{
+	font-family: 'Source Sans Pro';
+	color: #5b0187;
+}
+body.estilo-via-2016 #section-titulo h1,
+body.estilo-via-2016 #section-titulo h2,
+body.estilo-via-2016 #section-titulo h4{
+	font-family: 'Source Sans Pro';
+	color: #8c2b55;
+}
+
+.page-header {
+    border: none;
+}
+.programa-btn {
+    border: 6px solid rgba(225, 225, 225, 0.2);
+    padding: 0;
+    border-radius: 10px;
+    max-width: 500px;
+    margin-top: 50px;
+}
+.programa-btn img{ width:100%}
+.modal-header {
+    min-height: 50px;
+    padding: 0px;
+    border-bottom: none;
+    background: #f9ad00;
+    color: #fff;
+}
+
+body.estilo-la-maana-de-chilevisin .modal-header{
+	background: #000;
+}
+body.estilo-via-2016 .modal-header{
+	background: #000;
+}
+body.estilo-sabingo .modal-header{
+	background-image: url('../images/header-sabingo-v2.png');
+	background-repeat: no-repeat;
+	background-color: #1f385d;
+	background-position: 0px -5px;
+}
+.modal-title {
+    margin: 0px;
+    line-height: 1.42857;
+    text-align: right;
+	colo:#fff
+
+}
+.btn-login {
+	background: transparent none repeat scroll 0% 0%;
+	border: medium none;
+	color: #FFF;
+	padding: 8px 15px;
+	line-height: 36px;
+	font-size: 0.8em;
+}
+
+.login-modal{max-width: 350px;}
+.login-body {
+    text-align: center;
+	color:#eb2424;
+	padding-top: 0px;
+}
+
+.login-body h3 {
+    font-weight:normal;
+	color:#eb2424;
+}
+.facebookbtn {
+    background: #3B5998 none repeat scroll 0% 0%;
+    border-radius: 10px;
+    border: medium none;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1em;
+    width: 78%;
+    margin: 10px 0;
+}
+.twitterbtn {
+    background: #55acee none repeat scroll 0% 0%;
+    border-radius: 10px;
+    border: medium none;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1em;
+    width: 78%;
+    margin: 10px 0;
+}
+
+.facebookbtn img{
+    float: left;
+    width: 20px;
+}
+.twitterbtn img {
+    float: left;
+    width: 20px;
+}
+
+/* Botones login en modales */
+.login-btn-modal {
+    height: 50px;
+    border: 0;
+    width: 90px;
+    font-size: 13px;
+    color: #fff;
+}
+body.estilo-la-maana-de-chilevisin .login-btn-modal{
+	background: #000 none repeat scroll 0% 0%;
+	color: #000;
+}
+	body.estilo-la-maana-de-chilevisin .login-btn-modal .glyphicon{
+		color: #fff;
+	}
+body.estilo-via-2016 .login-btn-modal{
+	background: #000 none repeat scroll 0% 0%;
+	color: #000;
+}
+	body.estilo-via-2016 .login-btn-modal .glyphicon{
+		color: #fff;
+	}
+body.estilo-sabingo .login-btn-modal{
+	background: #2f52a0 none repeat scroll 0% 0%;
+}
+
+#section-espera{
+    padding-top: 30px;
+	min-height:600px;
+}
+#section-espera h1 {color:#fff; font-size:2em; font-weight:700;}
+#section-espera h2 {color:#fff; font-size:1.5em; font-weight:400;margin-bottom:0px}
+.header-espera{
+    height: 260px;
+    overflow: hidden;
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+}
+body.estilo-la-maana-de-chilevisin .header-espera{
+	background-image: url('../images/background_lamanana.jpg');
+}
+body.estilo-via-2016 .header-espera{
+	background-image: url('../images/background_vina.jpg');
+}
+body.estilo-sabingo .header-espera{
+	background-image: url('../images/background_sabingo.jpg');
+}
+
+
+
+
+
+.header-espera .img{
+  width: 85%;
+    max-width: 440px;
+    vertical-align: middle;
+    margin: 0px auto;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+body.estilo-la-maana-de-chilevisin .header-espera .img{
+	background-image: url('../images/logo_lamanana.png');
+}
+body.estilo-via-2016 .header-espera .img{
+	background-image: url('../images/logo_vina.png');
+}
+body.estilo-sabingo .header-espera .img{
+	background-image: url('../images/logo_sabingo.png');
+}
+#section-modales{
+    padding-top: 30px;
+	min-height:600px;
+}
+#section-modales h1 { font-size:2em; font-weight:700;}
+#section-modales h2 {font-size:1.5em; font-weight:400;margin-bottom:0px; color:#fff;}
+#section-modales h3 {font-size:1.5em; font-weight:400;margin-bottom:0px; color:#0F152A; margin-top: 0;}
+body.estilo-la-maana-de-chilevisin #section-modales h1,
+body.estilo-la-maana-de-chilevisin #section-modales h2,
+body.estilo-la-maana-de-chilevisin #section-modales h3{
+	font-family: 'Source Sans Pro';
+	color: #5b0187;
+}
+body.estilo-via-2016 #section-modales h1,
+body.estilo-via-2016 #section-modales h2,
+body.estilo-via-2016 #section-modales h3{
+	font-family: 'Source Sans Pro';
+	color: #8c2b55;
+}
+
+#section-modales .modal-body {min-height: 230px;}
+.btncerrar{width:100px; margin:0 auto;}
+
+.modal-content {
+    border: none; 
+}
+.login-btn-modal{
+	height: 50px;
+border: 0;
+width: 90px;
+font-size: 13px;
+color: #fff;
+background:#fcbc00;
+}
+
+.login-btn-modal:hover{
+	background:#ffcd3c;
+}
+body.estilo-la-maana-de-chilevisin #dinamica-trivia-online .modal-body{
+	background-image: url('/images/halo.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center -50px;
+}
+body.estilo-via-2016 #dinamica-trivia-online .modal-body{
+	background-image: url('/images/halo.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center -50px;
+}
+.titulo-pregunta{height:80px; padding:10px 0;}
+.titulo-pregunta h4{color:#747474; margin: 0;}
+body.estilo-la-maana-de-chilevisin .titulo-pregunta h4{
+	font-family: 'Source Sans Pro';
+	color: #5b0187;
+}
+body.estilo-via-2016 .titulo-pregunta h4{
+	font-family: 'Source Sans Pro';
+	color: #8c2b55;
+	
+}
+/* Botones de respuesta */
+.respuesta{
+	border-radius: 25px !important;
+	width: 100%;
+	margin-bottom: 10px;
+	background: transparent;
+	color: #3b3b3b;
+	white-space:normal !important;
+	max-width:250px;
+	position: relative;
+}
+body.estilo-la-maana-de-chilevisin .respuesta .letra{		
+	background-color: #3db5e7;
+	color: #ffffff;
+	font-family: 'Source Sans Pro';
+	text-transform: uppercase;
+	float: left;
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border-radius: 1em;
+	position: absolute;
+	font-size: 1em;
+	padding: 0.2em 0.5em;
+	top: 0.3em;
+	left: -0.6em;
+	border: 1px solid #fff;
+}
+body.estilo-via-2016 .respuesta .letra{		
+	background-color: #d7dcd6;
+	color: #ca1dcf;
+	font-family: 'Source Sans Pro';
+	text-transform: uppercase;
+	float: left;
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border-radius: 1em;
+	position: absolute;
+	font-size: 1em;
+	padding: 0.2em 0.5em;
+	top: 0.3em;
+	left: -0.6em;
+	border: 1px solid #fff;
+}
+body.estilo-la-maana-de-chilevisin .respuesta .porcentaje{
+	
+}
+body.estilo-via-2016 .respuesta .porcentaje{
+	color: #ca1dcf;
+}
+.respuesta:hover{ 
+	background:#eee;
+}
+body.estilo-la-maana-de-chilevisin .respuesta{
+	border: 3px solid #fff;
+    background-color: #fff;
+	color: #5b0187;
+}
+body.estilo-via-2016 .respuesta{
+	border: 3px solid #fff;
+    background-color: #fff;
+	color: #8c2b55;
+}
+
+body.estilo-sabingo .respuesta{
+	border: 3px solid #ccc;
+}
+
+.salir-body {
+    text-align: center;
+	color:#747474;
+	padding-top: 0px;
+}
+
+.salir-body h3 {
+    font-weight:normal;
+	color:#747474;
+}
+.modal-mensaje {
+   margin: 0px auto;
+	height: 33px;
+	width: 100px;
+	text-align: center;
+}
+.mensaje-cerrado {
+    background: rgb(0, 0, 0) none repeat scroll 0% 0%;
+    padding: 8px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.mensaje-finalizado {
+    background: #FF1919;
+    padding: 8px;
+    color: #fff;
+    font-size: 13px;
+}
+#sin-comenzar h2{
+	color: #fff;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+body.estilo-la-maana-de-chilevisin #sin-comenzar h2{
+	font-family: 'Source Sans Pro';
+}
+body.estilo-via-2016 #sin-comenzar h2{
+	font-family: 'Source Sans Pro';
+}
+
+li.login, li.logout{
+	display: none;
+}
+
+.modal-header-login {
+    padding: 5px 15px;
+    height: 30px;
+}
+
+/* Sin programas */
+#no-programas .col-sm-12{
+    padding-top: 30px;
+}
+#no-programas h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+#no-programas h4 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0px;
+}
+#no-programas h3 {
+    font-size: 21px;
+    font-weight: 400;
+    color: #fff;
+}
+	#no-programas h3 a{
+    	color: #fff;
+		font-decoration: none;
+	}
+#no-programas .btn-app {
+	margin-top: 14px;
+	cursor: pointer;
+}
+/* Status de las dinamicas */
+#dinamica-trivia-online .modal-footer{
+	border-top: none;
+	padding: 0;
+	text-align: center;
+}
+#dinamica-trivia-online h6.status{
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 0.9em;
+	width: 150px;
+	margin: 0 auto;
+	padding: 5px;
+	text-align: center;
+	height: 2em;
+	padding-top: 0.5em;
+	text-align: center;
+}
+body.estilo-la-maana-de-chilevisin #dinamica-trivia-online h6.status{
+	font-size: 0.7em;
+	font-family: 'Source Sans Pro';
+	width: 100px;
+	border-radius: 15px;
+	margin-bottom: 7px;	
+	background-color: transparent;
+	color: #5b0187;
+}
+body.estilo-la-maana-de-chilevisin #dinamica-trivia-online h6.cerrada{
+	background-color: #ffd700;
+}
+body.estilo-la-maana-de-chilevisin #dinamica-trivia-online h6.finalizada{
+	background-color: #ffd700;
+}
+body.estilo-via-2016 #dinamica-trivia-online h6.status{
+	font-size: 0.7em;
+	font-family: 'Source Sans Pro';
+	width: 100px;
+	border-radius: 15px;
+	margin-bottom: 7px;	
+	background-color: transparent;
+	color: #ffffff;
+}
+body.estilo-via-2016 #dinamica-trivia-online h6.cerrada{
+	background-color: #8c2b55;
+}
+body.estilo-via-2016 #dinamica-trivia-online h6.finalizada{
+	background-color: #8c2b55;
+}
+
+
+#respuestas{width: 100%;}
+
+/* Ganador */
+body.estilo-la-maana-de-chilevisin #emision-ganador .wrapper-ganador{
+	position: relative;
+	width: 260px;
+	margin:0 auto;
+}
+body.estilo-la-maana-de-chilevisin .m-ganador{
+    width: 260px;
+    height: 183px;
+    background: url('/images/marco-ganador-v3.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 10;
+}
+body.estilo-la-maana-de-chilevisin #scratchcard {
+    display: block;
+    width: 260px;
+    height: 183px;
+    position: absolute;
+	padding-left: 6px;
+}
+body.estilo-la-maana-de-chilevisin #scratchcard img{
+	z-index: 1;
+	width: 160px;
+	display: block;
+	-webkit-border-radius: 80px;
+	-moz-border-radius: 80px;
+	border-radius: 80px;
+	margin: 15px auto;
+	padding: 0;
+	border: 0px none;
+}
+body.estilo-la-maana-de-chilevisin #emision-ganador .nombre{
+	display: none;
+	width: 260px;
+	margin: 0px auto;
+	text-align:center;
+	color:#fff;
+	padding-top: 183px;
+}
+
+body.estilo-via-2016 #emision-ganador .wrapper-ganador{
+	position: relative;
+	width: 260px;
+	margin:0 auto;
+}
+body.estilo-via-2016 .m-ganador{
+    width: 260px;
+    height: 183px;
+    background: url('/images/marco-ganador-v3.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 10;
+}
+body.estilo-via-2016 #scratchcard {
+    display: block;
+    width: 260px;
+    height: 183px;
+    position: absolute;
+	padding-left: 6px;
+}
+body.estilo-via-2016 #scratchcard img{
+	z-index: 1;
+	width: 160px;
+	display: block;
+	-webkit-border-radius: 80px;
+	-moz-border-radius: 80px;
+	border-radius: 80px;
+	margin: 15px auto;
+	padding: 0;
+	border: 0px none;
+}
+body.estilo-via-2016 #emision-ganador .nombre{
+	display: none;
+	width: 260px;
+	margin: 0px auto;
+	text-align:center;
+	color:#fff;
+	padding-top: 183px;
+}
+
+
+
+.footer{margin-top:2em}
+.footer a.bases{color:#fff;text-decoration:none}
+
+
+/* Botones */
+body.estilo-la-maana-de-chilevisin .btn-warning,
+body.estilo-la-maana-de-chilevisin .btn-warning[disabled]{
+	background-color: #3db5e6;
+	border-color: #3db5e6;
+	color: #fff;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+body.estilo-la-maana-de-chilevisin .btn-primary,
+body.estilo-la-maana-de-chilevisin .btn-primary[disabled]{
+	background-color: #5b0187;
+	border-color: #5b0187;
+	color: #fff;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+body.estilo-la-maana-de-chilevisin .btn-success,
+body.estilo-la-maana-de-chilevisin .btn-success[disabled]{
+	background-color: #00af43;
+	border-color: #00af43;
+	color: #fff;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+body.estilo-la-maana-de-chilevisin .btn-danger,
+body.estilo-la-maana-de-chilevisin .btn-danger[disabled]{
+	background-color: #f63440;
+	border-color: #f63440;
+	color: #fff;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+body.estilo-la-maana-de-chilevisin .glyphicon-ok{
+	background-image: url('../images/correcta.png');
+	background-repeat: no-repeat;
+	color: transparent;
+	width: 21px;
+	height: 21px;
+	background-size: 20px;
+	background-position: 0px 1px;	
+}
+
+body.estilo-via-2016 .btn-warning,
+body.estilo-via-2016 .btn-warning[disabled]{
+	background-color: #3db5e6;
+	border-color: #3db5e6;
+	color: #fff;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+body.estilo-via-2016 .btn-primary,
+body.estilo-via-2016 .btn-primary[disabled]{
+	background-color: #8c2b55;
+	border-color: #8c2b55;
+	color: #fff;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+body.estilo-via-2016 .btn-success,
+body.estilo-via-2016 .btn-success[disabled]{
+	background-color: #00af43;
+	border-color: #00af43;
+	color: #fff;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+body.estilo-via-2016 .btn-danger,
+body.estilo-via-2016 .btn-danger[disabled]{
+	background-color: #f63440;
+	border-color: #f63440;
+	color: #fff;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+body.estilo-via-2016 .glyphicon-ok{
+	background-image: url('../images/correctawhite.png');
+	background-repeat: no-repeat;
+	color: transparent;
+	width: 21px;
+	height: 21px;
+	background-size: 20px;
+	background-position: 0px 1px;	
+}
+
+
+
+/* Logo en modales */
+body.estilo-la-maana-de-chilevisin .modal-body .logo{
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    top: -18px;
+    left: 0px;
+}
+body.estilo-la-maana-de-chilevisin .modal-body .logo .image{
+	background-image: url('../images/logo_lamanana_round.png');
+	width: 123px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+body.estilo-via-2016 .modal-body .logo{
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    top: -18px;
+    left: 0px;
+}
+body.estilo-via-2016 .modal-body .logo .image{
+    background-image: url('../images/logo_vina_round.png');
+    width: 68px;
+    height: 68px;
+    margin: 0 auto;
+	margin-top: -18px;
+}
+
+
+/**********  New Style ***********/
+
+/* Redonder los bordes */
+.btn-app img{
+	max-width: 175px;
+	border: 0px solid #000000;
+    -moz-border-radius: 5px;/*Firefox*/
+    -webkit-border-radius: 5px;/*Safari, Chrome*/
+    border-radius: 5px;
+}
+
+.btn-app img:hover{
+	opacity: 0.7;
+}
+
+
+.bases {
+	background-color:#808082;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:10px 60px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #7a2a1d;
+	text-align: center;
+	min-width: 250px;
+}
+.bases:hover {
+	background-color:#878787;
+	text-decoration:none;
+	color:#ffffff;
+}
+.bases:active {
+	position:relative;
+	top:1px;
+}
+
+.bases1{
+	background-color:#323232;
+	margin-top: 20px;
+}
+
+.logo-text{
+	font-size: 2rem;
+	
+}
+
+
+
+
+@media screen and (max-width: 1024px){
+                  .col-sm-12,.region-footer {
+                  	  text-align: center;
+                  	} 
+	    }
